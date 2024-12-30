@@ -307,10 +307,15 @@ section{
     color: #4CC9FE;
 }
 
+
 /* Responsive Styles */
 @media (max-width: 1200px) {
     header {
         padding: 10px 30px;
+    }
+    .main {
+        background-size: 600px;
+        background-position-x: 600
     }
     .main h2 {
         font-size: 3em;
@@ -318,41 +323,38 @@ section{
     .main h3 {
         font-size: 2.5em;
     }
-}
-
-@media (max-width: 992px) {
-    header {
-        padding: 10px 20px;
-    }
-    .main {
-        background-size: 600px;
-        background-position-x: 600px;
-    }
-    .main h2 {
-        font-size: 2.5em;
-    }
-    .main h3 {
-        font-size: 2em;
-    }
     .main-btn {
         font-size: 1em;
+        padding: 0.8em 1.8em;
     }
     .about h2, .title {
-        font-size: 1.8em;
+        font-size: 2em;
+    }
+    .card {
+        width: 20em;
     }
     .info h3, .info p {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
     .img img {
-        max-width: 250px;
+        max-width: 300px;
     }
     .images img {
-        max-width: 250px;
+        max-width: 300px;
     }
     .images h3 {
         font-size: 1.4em;
     }
     .images p {
+        font-size: 1.2em;
+    }
+    .content .icon {
+        font-size: 3em;
+    }
+    .content .inf h3 {
+        font-size: 1.6em;
+    }
+    .content .inf p {
         font-size: 1.2em;
     }
 }
@@ -374,22 +376,33 @@ section{
         flex-direction: column;
         align-items: flex-start;
         background-size: cover;
-        background-position: center;
+        background-position: cente
     }
-    .main h2, .main h3 {
-        text-align: center;
+    .main h2 {
+        font-size: 2.5em;
     }
-    .about h2, .title {
-        font-size: 1.5em;
+    .main h3 {
+        font-size: 2em;
+    }
+    .main-btn {
+        font-size: 0.9em;
+        padding: 0.7em 1.5em;
+    }
+    section {
+        padding: 50px 20px;
+    }
+    .card {
+        width: 100%;
+        margin: 10px 0;
     }
     .info h3, .info p {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
     .img img {
-        max-width: 200px;
+        max-width: 100%;
     }
     .images img {
-        max-width: 200px;
+        max-width: 100%;
     }
     .images h3 {
         font-size: 1.2em;
@@ -397,11 +410,20 @@ section{
     .images p {
         font-size: 1em;
     }
+    .content .icon {
+        font-size: 2.5em;
+    }
+    .content .inf h3 {
+        font-size: 1.4em;
+    }
+    .content .inf p {
+        font-size: 1em;
+    }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
     header {
-        padding: 10px 10px;
+        padding: 10px 20px;
     }
     .main h2 {
         font-size: 2em;
@@ -410,19 +432,14 @@ section{
         font-size: 1.5em;
     }
     .main-btn {
-        font-size: 0.9em;
+        font-size: 0.8em;
+        padding: 0.6em 1.2em;
     }
     .about h2, .title {
-        font-size: 1.2em;
+        font-size: 1.8em;
     }
     .info h3, .info p {
-        font-size: 1em;
-    }
-    .img img {
-        max-width: 150px;
-    }
-    .images img {
-        max-width: 150px;
+        font-size: 1.2em;
     }
     .images h3 {
         font-size: 1em;
@@ -430,5 +447,15 @@ section{
     .images p {
         font-size: 0.8em;
     }
+    .content .icon {
+        font-size: 2em;
+    }
+    .content .inf h3 {
+        font-size: 1.2em;
+    }
+    .content .inf p {
+        font-size: 0.9em;
+    }
 }
+
 
