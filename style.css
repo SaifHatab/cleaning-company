@@ -308,154 +308,133 @@ section{
 }
 
 
-/* Responsive Styles */
-@media (max-width: 1200px) {
-    header {
-        padding: 10px 30px;
-    }
-    .main {
-        background-size: 600px;
-        background-position-x: 600
-    }
-    .main h2 {
-        font-size: 3em;
-    }
-    .main h3 {
-        font-size: 2.5em;
-    }
-    .main-btn {
-        font-size: 1em;
-        padding: 0.8em 1.8em;
-    }
-    .about h2, .title {
-        font-size: 2em;
-    }
-    .card {
-        width: 20em;
-    }
-    .info h3, .info p {
-        font-size: 1.8em;
-    }
-    .img img {
-        max-width: 300px;
-    }
-    .images img {
-        max-width: 300px;
-    }
-    .images h3 {
-        font-size: 1.4em;
-    }
-    .images p {
-        font-size: 1.2em;
-    }
-    .content .icon {
-        font-size: 3em;
-    }
-    .content .inf h3 {
-        font-size: 1.6em;
-    }
-    .content .inf p {
-        font-size: 1.2em;
-    }
-}
+/* Responsive */
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .navigation {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .navigation a {
-        padding: 5px 0;
-    }
-    .main {
-        flex-direction: column;
-        align-items: flex-start;
-        background-size: cover;
-        background-position: cente
-    }
-    .main h2 {
-        font-size: 2.5em;
-    }
-    .main h3 {
-        font-size: 2em;
-    }
-    .main-btn {
-        font-size: 0.9em;
-        padding: 0.7em 1.5em;
-    }
-    section {
-        padding: 50px 20px;
-    }
-    .card {
-        width: 100%;
-        margin: 10px 0;
-    }
-    .info h3, .info p {
-        font-size: 1.5em;
-    }
-    .img img {
-        max-width: 100%;
-    }
-    .images img {
-        max-width: 100%;
-    }
-    .images h3 {
-        font-size: 1.2em;
-    }
-    .images p {
-        font-size: 1em;
-    }
-    .content .icon {
-        font-size: 2.5em;
-    }
-    .content .inf h3 {
-        font-size: 1.4em;
-    }
-    .content .inf p {
-        font-size: 1em;
-    }
-}
-
-@media (max-width: 480px) {
+@media screen and (max-width: 1024px) {
     header {
         padding: 10px 20px;
     }
+
+    .main {
+        background-size: 500px;
+        background-position: center right;
+    }
+
     .main h2 {
-        font-size: 2em;
+        font-size: 3em;
     }
-    .main h3 {
-        font-size: 1.5em;
+
+    .content {
+        flex-direction: column;
+        align-items: center;
     }
-    .main-btn {
-        font-size: 0.8em;
-        padding: 0.6em 1.2em;
+
+    .img {
+        margin: 15px;
     }
-    .about h2, .title {
-        font-size: 1.8em;
+
+    .images {
+        padding: 20px;
     }
-    .info h3, .info p {
-        font-size: 1.2em;
-    }
-    .images h3 {
-        font-size: 1em;
-    }
-    .images p {
-        font-size: 0.8em;
-    }
-    .content .icon {
-        font-size: 2em;
-    }
-    .content .inf h3 {
-        font-size: 1.2em;
-    }
-    .content .inf p {
-        font-size: 0.9em;
+
+    .images img {
+        max-width: 300px;
     }
 }
 
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
 
+    .navigation {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navigation a {
+        margin: 5px;
+    }
+
+    .main {
+        background: url(img/team/3.png) no-repeat;
+        background-position: right;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .main h2 {
+        font-size: 2.5em;
+    }
+
+    .main h3 {
+        font-size: 2em;
+        color: #000;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .img {
+        display: block;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .images {
+        display: block;
+        text-align: center;
+    }
+
+    .images h3, .images p {
+        padding-left: 50px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navigation a {
+        font-size: 1em;
+    }
+
+    .main h2 {
+        font-size: 2em;
+    }
+
+    .main h3 {
+        font-size: 1.5em;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .content .icon {
+        font-size: 2.5em;
+        margin: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .social-icons {
+        margin-top: 15px;
+    }
+}
